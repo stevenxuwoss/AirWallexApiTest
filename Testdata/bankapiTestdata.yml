@@ -1,0 +1,13 @@
+name: bankapiTest
+request:
+    url: /bank
+    method: POST
+    headers:
+        Content-Type: "application/json"
+    json:
+        payment_method: $paymentMethod
+        bank_country_code: $bankCountryCode
+        account_name: $accountName
+        account_number: $accountNumber
+        swift_code: $swiftCode
+        aba: $aba
